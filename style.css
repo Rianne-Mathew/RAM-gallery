@@ -1,0 +1,51 @@
+/* Soothing Grid Background - Like a Gallery Wall */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e9e6df; /* Light neutral color */
+    background-image: linear-gradient(transparent 49%, rgba(0, 0, 0, 0.08) 50%), 
+                      linear-gradient(90deg, transparent 49%, rgba(0, 0, 0, 0.08) 50%);
+    background-size: 50px 50px; /* Grid effect */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Vertical Gallery Layout */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the paintings */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Painting Container */
+.painting {
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 40px; /* Space between paintings */
+    width: 80%; /* Adjust width */
+    max-width: 500px;
+}
+
+/* Hover Zoom Effect */
+.painting:hover {
+    transform: scale(1.05);
+}
+
+/* Different Frame Styles */
+.gold-frame {
+    border: 10px solid gold;
+    box
